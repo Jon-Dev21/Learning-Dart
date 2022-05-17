@@ -2,9 +2,12 @@
 // In dart, an array is represented by a List<T>
 
 // Declaring an array of doubles.
+//import 'dart:html';
+
 void main() {
   // This code gives an error
-  //List<double> grades = new List<double>();
+  List<double> gradeds = new List.filled(3, 5);
+
 
   // Declaring array with specific type
   List<double> grade = [10.2];
@@ -16,4 +19,8 @@ void main() {
 
     print(grade[0]);
     print(grades[2]);
+
+    for(var i = 0; i < gradeds.length; i++){
+      print(gradeds[i]);
+    }
 }
