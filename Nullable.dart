@@ -43,8 +43,28 @@ void main() {
    * The ! operator only works when data types are the same.
    * If data types are not the same, you would use this to convert.
    */
-num? val = 5;
-int otherVal = val as int; // Other val = 5
-print(otherVal);
+
+  num? val = 5;
+  int otherVal = val as int; // Other val = 5
+  print(otherVal);
+
+  /**
+   * The ?? operator can be used to produce a non-nullable value from a nullable one.
+   */
+
+  int? nullableVal = 10;
+  int nonNullable = nullableVal ?? 0; // nonNullable = 10 since it's not null.
+
+
+  /**
+   * Using the null aware access operator, (?.)
+   */
+
+  //double? pi = 3.14;
+  double? pi;
+
+  final round1 = pi.round(); // Gives error if pi is null.
+  final round2 = pi?.round(); // Use this if pi is nullable.
+
 }
 
