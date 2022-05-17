@@ -63,7 +63,7 @@ void main() {
   //double? pi = 3.14;
   double? pi;
 
-  final round1 = pi.round(); // Gives error if pi is null.
+  //final round1 = pi.round(); // Gives error if pi is null.
   final round2 = pi?.round(); // Use this if pi is nullable.
 
 }
